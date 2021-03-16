@@ -1,0 +1,22 @@
+{
+  "name": "launch-countdown-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettAGobel/front-end-mentor-countdown-timer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrettAGobel/front-end-mentor-countdown-timer/issues"
+  },
+  "homepage": "https://github.com/BrettAGobel/front-end-mentor-countdown-timer#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

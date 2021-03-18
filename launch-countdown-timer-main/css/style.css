@@ -1,18 +1,9 @@
-$bkgTest: blue;
-$sans-serif: "Source Sans Pro", Helvetica, Verdana, sans-serif;
-$serif: Merriweather, Georgia, "Times New Roman", serif;
-$mono: "Source Code Pro", Courier, mono;
-$bodyFont: "Red Hat Text", serif;
-
 body {
-
   margin: 0;
-
 }
 
-
 h1 {
-  font-family: $bodyFont ;
+  font-family: "Red Hat Text", serif;
 }
 
 .wrapper {
@@ -20,35 +11,27 @@ h1 {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background: hsl(230, 100%, 99%);
-  background:       url('../images/pattern-hills.svg'),
-  url("../images/bg-stars.svg");
-  background-color: hsl(235, 16%, 14%);
+  background: #fafbff;
+  background: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
+  background-color: #1e1f29;
   background-repeat: no-repeat;
-  background-size:contain, auto;
+  background-size: contain, auto;
   background-position: bottom;
-
-
 }
 
 .top-container {
   position: relative;
   top: 8em;
   width: auto;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .counter-container {
-
   display: flex;
   flex-flow: row nowrap;
-
-
 }
 
 .counter-container > div.time {
@@ -62,7 +45,7 @@ h1 {
   height: 280px;
   background-color: aqua;
   border-radius: 5px;
-  margin: 0
+  margin: 0;
 }
 
 .time {
@@ -70,62 +53,56 @@ h1 {
   height: 10em;
   display: flex;
   flex-flow: column nowrap;
-  align-items:center;
-
+  align-items: center;
 }
 
-@media (min-width: 360px) and (max-width: 540px){
+@media (min-width: 360px) and (max-width: 540px) {
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background: hsl(230, 100%, 99%);
-    background:       url('../images/pattern-hills.svg'),
-    url("../images/bg-stars.svg");
-    background-color: hsl(235, 16%, 14%);
+    background: #fafbff;
+    background: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
+    background-color: #1e1f29;
     background-repeat: no-repeat;
-    background-size:180%;
+    background-size: 180%;
     background-position: bottom, left;
-
-
   }
 
   .counter-container > div.time {
     display: flex;
     justify-content: space-evenly;
-
   }
-    .time {
-      width: 60px;
-      height: 90px;
-    }
-}
 
-@media (min-width: 540px) and (max-width: 780px){
+  .time {
+    width: 60px;
+    height: 90px;
+  }
+}
+@media (min-width: 540px) and (max-width: 780px) {
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background: hsl(230, 100%, 99%);
-    background:       url('../images/pattern-hills.svg'),
-    url("../images/bg-stars.svg");
-    background-color: hsl(235, 16%, 14%);
+    background: #fafbff;
+    background: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
+    background-color: #1e1f29;
     background-repeat: no-repeat;
-    background-size:180%;
+    background-size: 180%;
     background-position: bottom, left;
-
-
   }
 
   .counter-container > div.time {
     display: flex;
     justify-content: space-evenly;
-
   }
+
   .time {
     width: 100px;
     height: 100px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -12,14 +12,26 @@ body {
 
 
 h1 {
+  margin-bottom: 2em;
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
   font-family: $bodyFont ;
 }
 
+h2{
+  font-size: 1em;
+
+}
+
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center - 300px;
+
   background: hsl(230, 100%, 99%);
   background:       url('../images/pattern-hills.svg'),
   url("../images/bg-stars.svg");
@@ -27,59 +39,75 @@ h1 {
   background-repeat: no-repeat;
   background-size:contain, auto;
   background-position: bottom;
+  height: 100vh;
 
 
 }
 
 .top-container {
   position: relative;
-  top: 8em;
-  width: auto;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  top: 15%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: minmax(5%, 20%) 1fr minmax(5%, 20%);
+  //grid-template-rows: repeat(auto-fit, 1fr 1fr);
+  //grid-column-gap: 1vw;
 
 }
 
 .counter-container {
 
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+
+
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-template-columns: repeat(4, minmax(80px,300px));
+  grid-template-rows: minmax(80%, 100%) minmax(20%, 20%);
+
+
 
 
 }
 
 .counter-container > div.time {
-  margin: 1em;
-  justify-content: space-evenly;
+  margin: 0.5em;
+
 }
 
+
+
+
 .counter {
+
+  justify-items: center;
   border: black 1px solid;
-  width: 100%;
-  height: 280px;
+  padding-top: 50%;
+  padding-bottom: 50%;
   background-color: aqua;
   border-radius: 5px;
   margin: 0
 }
 
-.time {
-  width: 10em;
-  height: 10em;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items:center;
+.counter-container > h2 {
+  justify-self: center;
+  align-self: center;
+  color: white;
+  grid-row-start: 2;
 
 }
 
+
+
 @media (min-width: 360px) and (max-width: 540px){
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //height: 100vh;
     background: hsl(230, 100%, 99%);
     background:       url('../images/pattern-hills.svg'),
     url("../images/bg-stars.svg");
@@ -91,22 +119,15 @@ h1 {
 
   }
 
-  .counter-container > div.time {
-    display: flex;
-    justify-content: space-evenly;
 
-  }
-    .time {
-      width: 60px;
-      height: 90px;
-    }
+
 }
 
 @media (min-width: 540px) and (max-width: 780px){
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
     height: 100vh;
     background: hsl(230, 100%, 99%);
     background:       url('../images/pattern-hills.svg'),
@@ -119,13 +140,6 @@ h1 {
 
   }
 
-  .counter-container > div.time {
-    display: flex;
-    justify-content: space-evenly;
 
-  }
-  .time {
-    width: 100px;
-    height: 90px;
-  }
+
 }

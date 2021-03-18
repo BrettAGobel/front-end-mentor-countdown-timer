@@ -66,7 +66,7 @@ h1 {
     background: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
     background-color: #1e1f29;
     background-repeat: no-repeat;
-    background-size: 180%;
+    background-size: 200%, contain;
     background-position: bottom, left;
   }
 
@@ -101,7 +101,7 @@ h1 {
 
   .time {
     width: 100px;
-    height: 100px;
+    height: 90px;
   }
 }
 

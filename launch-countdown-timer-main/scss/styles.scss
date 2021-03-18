@@ -85,7 +85,7 @@ h1 {
     url("../images/bg-stars.svg");
     background-color: hsl(235, 16%, 14%);
     background-repeat: no-repeat;
-    background-size:180%;
+    background-size:200%, contain;
     background-position: bottom, left;
 
 
@@ -126,6 +126,6 @@ h1 {
   }
   .time {
     width: 100px;
-    height: 100px;
+    height: 90px;
   }
 }

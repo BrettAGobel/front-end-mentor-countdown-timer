@@ -63,7 +63,25 @@ h2 {
   border-radius: 50%;
 }
 
-.flipper {
+.time {
+  perspective: 1000px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.time span {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 25%;
+  font-size: 4em;
+}
+
+.flipper-front {
+  transform-style: preserve-3d;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,15 +90,22 @@ h2 {
   height: 100%;
   background-color: #343650;
   border-radius: 3px;
+  transition: 1s ease;
 }
-.flipper::after {
-  content: "";
-  background-color: #8486a9;
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  top: 50%;
-  border-radius: 3px;
+.flipper-front:hover {
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+.flipper-front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.flipper-back {
+  transform: rotateY(180deg);
 }
 
 .counter-container > h2 {

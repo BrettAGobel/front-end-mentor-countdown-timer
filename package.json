@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "scss": "node-sass -w launch-countdown-timer-main/scss -o launch-countdown-timer-main/css/ --recursive"
   },
   "repository": {
     "type": "git",

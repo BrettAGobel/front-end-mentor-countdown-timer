@@ -4,7 +4,7 @@
 let countDownDate = new Date("April 15, 2021 16:37:52").getTime();
 
 // Run myFunc every second
-let myFunc = setInterval(function() {
+let myFunc = setInterval(() => {
 
     let now = new Date().getTime();
     let timeLeft = countDownDate - now;
@@ -16,12 +16,18 @@ let myFunc = setInterval(function() {
     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     // Result is output to the specific element
-    document.getElementById("days").innerHTML = days + "d "
-    document.getElementById("hours").innerHTML = hours + "h "
-    document.getElementById("minutes").innerHTML = minutes + "m "
-    document.getElementById("seconds").innerHTML = seconds + "s "})
+    document.getElementById("days").innerText = days + "d "
+    document.getElementById("hours").innerText = hours + "h "
+    document.getElementById("minutes").innerText = minutes + "m "
+    document.getElementById("seconds").innerText = seconds + "s "})
 
-    // Display the message when countdown is over
+
+
+// let changeFunc = setInterval((myFunc) => {
+//     // document.querySelectorAll('figure.flip-object-bottom').style.color = 'red'
+// }, myFunc)
+
+//     Display the message when countdown is over
 //     if (timeLeft < 0) {
 //         clearInterval(myFunc);
 //         document.getElementById("days").innerHTML = ""
@@ -32,3 +38,27 @@ let myFunc = setInterval(function() {
 //     }
 // }, 1000);
 
+
+
+//
+// let secondsElement = document.getElementById('seconds');
+// const observer = new MutationObserver(mutations => {
+//     console.log(mutations)
+// });
+//
+// observer.observe(secondsElement, {
+//     characterData: true
+// })
+
+
+// let timeConversion =  (days) => {
+//     let hours = (days * 24)
+//     let minutes = (hours * 60)
+//     let seconds = (minutes  * 60)
+//
+//         // console.log(seconds)
+// }
+//
+//
+//
+// timeConversion(1)
